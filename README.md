@@ -1,14 +1,22 @@
 # TrackTracer
 An interactive music platform with cross-user collaboration and collaborative playlists.
 
+--- 
+
 ### Project Overview
 TrackTracer is a dynamic database application designed to revolutionize the way users interact with music. It allows users to follow artists, like songs, create playlists, and even follow other users. With TrackTracer, users can also view others' followed artists and liked songs, and collaborate on playlists with mutual followers, giving a community-based music experience.
 <br />
 <br />
+
+---
+
 ### Problem Statement
 To build an music app in which one can follow their favourite artists, save the songs they like, make friends and share along their musical experiences via collaborative playlists styles and exploring each others music tastes. 
 <br />
 <br />
+
+---
+
 ### Tech Stack
 #### Frontend:
 - HTML5
@@ -20,6 +28,8 @@ To build an music app in which one can follow their favourite artists, save the 
 - MongoDB with Mongoose ODM for Node.js
 
 <br />
+
+---
 
 ### Project Features
 1. **Artist Management**
@@ -52,6 +62,8 @@ Registered artists can create albums and add songs, visible to all users and fol
 <br />
 <br />
 
+---
+
 ### Database Design
 #### ERD:
 Our database includes the following entities:
@@ -82,6 +94,8 @@ Attributes: User_ID (foreign key), Artist_ID (foreign key).
 Attributes: User_ID (foreign key), Friend_ID (foreign key).
 
 <br />
+
+---
 
 ### Schmema (Latest Database State)
 #### Albums
@@ -269,5 +283,3 @@ const user = mongoose.model("user", userSchema);
 module.exports = user;
 ```
 
-### Support
-Support us by giving an A. 

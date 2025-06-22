@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Friends</title>
+	<link rel="stylesheet" href="friends.css">
+	<script src="friends.js" defer></script>
+</head>
+
+<body>
+	<div class="select hidden">
+		<form action="/api/addFriends" method="post" class="friendForm"></form>
+	</div>
+	<header class="header">
+		<div class="navbar">
+			<div class="logo">
+				<img src="./Assets/user.png" id="webLogo" alt="logo">
+				<a href="/" id="webname">TrackTracer</a>
+			</div>
+			<div class="buttons">
+				<div class="account"></div>
+				<button id="Logoutbtn">Logout</button>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="friends">
+			<div class="top">
+				<h1>Friends</h1>
+				<button class="newFriend">+</button>
+			</div>
+			<ul class="currentFriends"></ul>
+		</div>
+		<div class="liked">
+			<h1 class="likeTitle"></h1>
+			<ul class="likedSongs"></ul>
+		</div>
+		<div class="following">
+			<h1 class="followTitle"></h1>
+			<ul class="followedArtists"></ul>
+		</div>
+	</div>
+	<footer>
+		<p>Asim, Shoaib</p>
+	</footer>
+</body>
+
+</html>

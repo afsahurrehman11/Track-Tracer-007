@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(18, 21, 28);
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 38em;
+}
+
+.friends,
+.liked,
+.following {
+  padding: 1em;
+  background-color: azure;
+  min-height: 35em;
+  min-width: 25em;
+  display: flex;
+  flex-direction: column;
+}
+.friendForm {
+  height: 30em;
+  width: 30em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.friendlistWrap {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+.top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  height: 4em;
+  width: 100%;
+  background-color: rgb(83, 21, 22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  color: white;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+}
+
+#webLogo {
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+#webname {
+  all: unset;
+}
+
+#Logoutbtn {
+  all: unset;
+}
+
+
+footer {
+  height: 4em;
+  width: 100%;
+  background-color: rgb(83, 21, 22);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.newFriend {
+  background-color: rgb(102, 27, 28);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.newFriend:hover {
+  background-color: #004d4f;
+}

@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  height: 4em;
+  width: 100%;
+  background-color: rgb(83, 21, 22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  color: white;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+}
+
+#webLogo {
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.friend {
+  all: unset;
+}
+
+#webname {
+  all: unset;
+}
+
+#Logoutbtn {
+  all: unset;
+}
+
+.top {
+  padding: 2em 2em 2em 4em;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  height: 15em;
+  background-color: rgb(25, 29, 38);
+}
+
+.profilePic {
+  height: 200px;
+  width: 200px;
+  background-color: azure;
+  border-radius: 50%;
+}
+
+.type {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.main {
+  height: 100%;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(25, 29, 38);
+  gap: 2em;
+}
+
+.albums,
+.songsWrap {
+  width: 40em;
+  background-color: rgb(231, 236, 255);
+  height: 75vh;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  border: 2px solid rgb(102, 27, 28);
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 0 15px rgb(150, 40, 42);
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.loader {
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  color: wheat;
+}
+
+.mainDataBefore {
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+}
+
+.mainDataAfter {
+  font-size: medium;
+}
+
+.remove {
+  display: none;
+}
+
+.songs,
+.albumNames {
+  margin-left: 2em;
+}
+
+.profilePicture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#followBtn {
+  height: 2em;
+  width: 5em;
+}
+
+.info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow-x: hidden;
+  justify-content: center;
+  /* overflow-y: scroll; */
+}
+
+li {
+  list-style: circle  ;
+
+}
+
+.title,
+.albumName {
+  text-align: center;
+  padding-bottom: 10px;
+}

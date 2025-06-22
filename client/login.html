@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src = "./login.js" defer></script>
+    <script src = "./login.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./Assets/user.png" id="webLogo" alt="logo">
+                <div id="webname">TrackTracer</div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <form class = "login_form" action="/login" method="post">
+                
+                <label id="formItems" for="Username">
+                    <input id="formItems" type="text" name="username" placeholder="Username">
+                </label>
+                <label id="formItems" for="password">
+                    <input id="formItems" type="text" name="password" placeholder="Password">
+                </label>
+                <button id="formItems">Login</button>
+                <div class="error_msg no_error_msg"> Incorrect username or password</div>
+            </form>
+            <div class="secondDiv">
+                <div>Dont have an account?</div>
+                <a href="/signup"><button id="singin">Create Account</button><a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

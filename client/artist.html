@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist</title>
+    <link rel="stylesheet" href="./artist.css" />
+    <script type="module" src="./artist.js" defer></script>
+</head>
+
+<body>
+    <div class="mainDataBefore">
+        <header class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./Assets/user.png" id="webLogo" alt="logo">
+                    <a href="/" id="webname">TrackTracer</a>
+                </div>
+                <div class="buttons">
+                    <button class="friend">Friends</button>
+                    <div class="account"></div>
+                    <button id="Logoutbtn">Logout</button>
+                </div>
+            </div>
+        </header>
+        <div class="top">
+            <div class="profilePic">
+                <img class="profilePicture" alt="profile_pic" />
+            </div>
+            <div class="info">
+                <h1 class="type">Artist</h1>
+                <h1 class="name"></h1>
+                <button id="followBtn"></button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="albums">
+                <h1 class="title">Albums</h1>
+                <ul class="albumNames"></ul>
+            </div>
+            <div class="songsWrap">
+                <h1 class="albumName"></h1>
+                <ul class="songs"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="loading">
+        <h1 class="loader">Loading</h1>
+    </div>
+</body>
+
+</html>

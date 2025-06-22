@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Song</title>
+	<link rel="stylesheet" href="./song.css" />
+	<script type="module" src="song.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="navbar">
+			<div class="logo">
+				<img src="./Assets/user.png" id="webLogo" alt="logo">
+				<a href="/" id="webname">TrackTracer</a>
+			</div>
+			<div class="buttons">
+				<button class="friend">Friends</button>
+				<div class="account"></div>
+				<button id="Logoutbtn">Logout</button>
+			</div>
+		</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="details">
+			<div class="playlistSelect hidden">
+				<form action="/api/addSong" method="post" class="playlistForm"></form>
+			</div>
+			<div class="info">
+				<div class="image">
+					<img class="Picture" alt="">
+				</div>
+				<div class="contents">
+					<h1 class="title"></h1>
+					<h1 class="artist"></h1>
+					<div class="butons">
+						<button class = "btn" id="like"></button>
+						<button class = "btn" id="addPlay">Add to playlist</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(18, 21, 28);
+}
+
+.navbar {
+  height: 4em;
+  width: 100%;
+  background-color: rgb(83, 21, 22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  color: white;
+  font-size: 1.2em;
+  border-bottom: 2px solid black;
+}
+
+.searchWrap {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: rgb(25, 29, 38);
+}
+
+.searchForm {
+  display: flex;
+  gap: 1em;
+}
+
+input[type="text"] {
+  width: 30em;
+  height: 3em;
+  padding: 0 1em;
+  border: 2px solid rgb(102, 27, 28);
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: rgb(231, 236, 255);
+}
+
+#searchButton {
+  width: 5em;
+  height: 3em;
+  background-color: rgb(102, 27, 28);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#searchButton:hover {
+  background-color: rgb(102, 27, 28);
+}
+
+.account {
+  all:unset;
+}
+
+.addFriend button,
+.viewFriends {
+  background-color: #006064;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.addFriend button:hover,
+.viewFriends:hover {
+  background-color: #004d4f;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 2em;
+  background-color: rgb(25, 29, 38);
+}
+
+.artists,
+.playlists,
+.likedSongs {
+  height: 60vh;
+  width: 30%;
+  background-color: rgb(231, 236, 255);
+  border: 2px solid rgb(102, 27, 28);
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 0 15px rgb(150, 40, 42);
+}
+
+h2 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: rgb(102, 27, 28);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+ul li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid rgb(102, 27, 28);
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.newPlay {
+  background-color: rgb(102, 27, 28);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.newPlay:hover {
+  background-color: #004d4f;
+}
+
+footer {
+  height: 4em;
+  width: 100%;
+  background-color: rgb(83, 21, 22);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border: 1px solid #4dd0e1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.form .playlistForm {
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.playlistForm label {
+  margin-bottom: 1em;
+}
+
+.playlistForm input[type="text"] {
+  width: 100%;
+  padding: 0.5em;
+  border: 2px solid #4dd0e1;
+  border-radius: 5px;
+}
+
+.playlistForm button {
+  background-color: #006064;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.playlistForm button:hover {
+  background-color: #004d4f;
+}
+
+.hidden {
+  display: none;
+}
+
+.friendlistWrap {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friendForm,
+.friends {
+  height: 30em;
+  width: 30em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.plcontainer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1em;
+}
+
+#webLogo {
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.friend {
+  all: unset
+}
+
+#Logoutbtn {
+  all: unset;
+}

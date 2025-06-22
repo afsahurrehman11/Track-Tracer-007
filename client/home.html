@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackTracer</title>
+    <link rel="stylesheet" href="./home.css" />
+    <script type="module" src="./home.js" defer></script>
+</head>
+
+<body>
+    <div class="select hidden">
+        <form action="/api/addFriends" method="post" class="friendForm"></form>
+    </div>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./Assets/user.png" id="webLogo" alt="logo">
+                <div id="webname">TrackTracer</div>
+            </div>
+            <div class="buttons">
+                <button class="friend">Friends</button>
+                <a href = "/profile" class="account"></a>
+                <button id="Logoutbtn">Logout</button>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="searchWrap">
+        <form class="searchForm" action="/api/search" method="post">
+            <input type="text" name="query" placeholder="Search for artists, songs..." />
+            <button id="searchButton">Search</button>
+        </form>
+    </div>
+    <div class="mainContent">
+        <div class="artists">
+            <h2 class="following">Your Artists</h2>
+            <ul class="artistList"></ul>
+        </div>
+        <div class="playlists">
+            <div class="top">
+                <div class="plcontainer">
+                    <h2 class="playlistNames">Your Playlists</h2>
+                    <button class="newPlay">+</button>
+                </div>
+                <ul class="playlistData"></ul>
+            </div>
+        </div>
+        <div class="likedSongs">
+            <h2 class="Liked">Liked Songs</h2>
+            <ul class="songList"></ul>
+        </div>
+    </div>
+    <div class="form hidden">
+        <form action="/api/playlist" method="post" class="playlistForm">
+            <label for="name">Name: <input type="text" name="name" /></label>
+            <label for="collab">
+                Is Collaborative:
+                <input class="checkbox" type="checkbox" name="collab" />
+            </label>
+            <label class="username hidden" for="username">
+                Username: <input type="text" name="username" />
+            </label>
+            <button>Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>Asim, Shoaib</p>
+    </footer>
+</body>
+
+</html>

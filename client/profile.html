@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackTracer</title>
+    <link rel="stylesheet" href="./profile.css" />
+    <script type="module" src="./profile.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./Assets/user.png" id="webLogo" alt="logo">
+                <a href = "/" id="webname">TrackTracer</a>
+            </div>
+            <div class="buttons">
+                <button class="friend">Friends</button>
+                <div class="account"></div>
+                <button id="Logoutbtn">Logout</button>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="NonArtist hidden">
+        <div class="info">
+            <div class="name">
+                <!-- username -->
+            </div>
+            <button class="registor">Become an Artist</button>
+            <form class="registorForm hidden">
+                <label class="formItems" for="username">
+                    <input type="text" class="username" name="username" placeholder="Artist Label">
+                </label>
+                <label class="formItems" for="genre">
+                    <input type="text" class="genre" name="genre" placeholder="Genre">
+                </label>
+                <label class="formItems" for="pic">
+                    <input type="text" class="pic" name="pic" placeholder="ProfilePictureUrl">
+                </label>
+                <button type="submit">Submit</button>
+                <button class="closeform1">Close</button>
+        </div>
+    </div>
+
+    <div class="artist hidden">
+        <div class="info">
+            <div class="name">
+
+            </div>
+            <div class="status">
+                Artist
+            </div>
+        </div>
+
+        <div class="data">
+            <div class="albums">
+                <span>Albums</span>
+                <button class="addAlbum">+</button>
+            </div>
+            <div class="songs">
+                <span>Songs</span>
+                <button class = "addSong">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form2">
+        <!-- ya ablum wala form ha .. is ko change karna ha -->
+        <form class="albumForm hidden">
+            <label class="formItems" for="title">
+                <input type="text" class="title" name="title" placeholder="Artist Label">
+            </label>
+            <label class="formItems" for="imageUrl">
+                <input type="text" class="imageUrl" name="imageUrl" placeholder="Genre">
+            </label>
+            <button type="submit">Submit</button>
+            <button class="closeform1">Close</button>
+    </div>
+</body>

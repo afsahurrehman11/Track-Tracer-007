@@ -13,11 +13,12 @@ const app = express();
 app.use(express.static(path.join(__dirname, "..", "client")));
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
-const connectString =
-    "mongodb+srv://tracktracer9971:gravitySwallowsLight@tracktracer.qvyluxx.mongodb.net/?retryWrites=true&w=majority&appName=TrackTracer";
+require('dotenv').config();
 
-const client_id = "953a81833a4a4ca7a943b8fa0438531c";
-const client_secret = "ac2c3847cebb4e529d4e4936175626c6";
+const connectString = process.env.MONGO_URI;
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
+
 let accessToken = null;
 let logged_in = false;
 let username = null;
